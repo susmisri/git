@@ -1,0 +1,17 @@
+package quadrilateral;
+public class quadrilateral {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int A=80;
+     int B=70;
+     int C=100;
+     int D=110;
+     if(A+B+C+D==360) {
+    	 System.out.println("valid Quadrilateral");
+     }
+     else {
+    	 System.out.println("invalid Quadrilateral");
+     }
+	}
+
+}

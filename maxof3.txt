@@ -1,0 +1,22 @@
+package max3numbers;
+public class max3numbers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x=2000;
+		int y=3000;
+		int z=4000;
+		if(x>y&&x>z) {
+			System.out.println("x is a greater number");
+		}
+
+		else if(y>z&&y>x) {
+			System.out.println("y is a greater number");
+		}
+		else {
+			
+			System.out.println("z is a greater number");
+		}
+	
+	}
+}
