@@ -1,0 +1,68 @@
+// print last 3 digits
+x=1557890
+print(x%1000)
+
+//printing 1 number from beginning and 1 number from ending
+first=1
+last=100
+while(i<=50){
+print(first)
+print(last)
+first=first+1
+last=last+1
+}
+
+
+//printing the average of numbers 
+
+i=12
+sum=0
+while(i<=12)
+{
+sum=sum+i
+i=i+1
+}
+
+print(sum/4)
+
+//create a game 
+int age=input()
+if(age<5){
+print("baby")
+}
+else if?(age>=5&&age<10){
+print("toddler")
+}
+else if(age>=10&&age<18){
+print("teenaged")
+}
+else if(age>=18&&age<25)
+{
+print("adult")
+}
+else{
+print("grown adult")
+}
+
+
+//check the input number is prime or not
+int num=input()
+int count=0
+for(int i=1;i<num+1;i++)
+{
+if(num%i==0){
+count=count+1
+}
+}
+if(num%2==2){
+print("prime number")
+}
+else{
+print("not a prime number")
+}
+
+
+//sum of squares of numbers
+n=10
+print(n(n+1)(2n+1)/6)
+}
