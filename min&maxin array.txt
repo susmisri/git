@@ -1,0 +1,26 @@
+package array;
+import java.util.Scanner;
+public class min_maxinarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  Scanner sc=new Scanner(System.in);
+   int a[]=new int[10];
+   System.out.println("enter the elements");
+   int min=Integer.MAX_VALUE;
+   int max=Integer.MIN_VALUE;
+   for( int i=0;i<=9;i++) {
+	   a[i]=sc.nextInt();
+	   if(a[i]<min) {
+		   min=a[i];
+	   }
+	   if(a[i]>max) {
+		   max=a[i];
+	   }
+   }
+
+   System.out.println("Maximum number is: "+max);
+   System.out.println("Minimum number is: "+min);
+	}
+
+}
