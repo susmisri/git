@@ -1,0 +1,20 @@
+package array;
+import java.util.Scanner;
+public class avgofarray {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		System.out.println("enter the elements");
+		for( int i=0;i<n;i++) {
+			a[i]=sc.nextInt();
+		}
+		float sum=0;
+		for( int j=0;j<n;j++) {
+          sum+=a[j];
+	}
+		double average=sum/n;
+		System.out.println(average);
+}
+}

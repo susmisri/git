@@ -1,0 +1,30 @@
+package array;
+import java.util.Scanner;
+public class firstindex {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+     
+        int a = sc.nextInt();
+        int num[]=new int[a];
+        
+        for(int j=0;j<a;j++){
+            num[j]= sc.nextInt();
+        }
+       
+        int n = sc.nextInt();
+        boolean ispresent=false;
+        int pos=-1;
+        for (int j= 0; j<a; j++) {
+            if(num[j]==n){
+                pos=j; 
+                break;
+            }
+        }
+        System.out.println(pos+1);
+	}
+}
+
+	
+
+

@@ -1,0 +1,19 @@
+package array;
+public class Smallestelement {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      int a[]= {2,3,4,5,8,7,6,1};
+      int Secondmin=Integer.MAX_VALUE;
+      int min=Secondmin-1;
+      for(int i=0;i<a.length;i++) {
+    	  int temp=0;
+    	  if(min>a[i]) {
+    		  temp=min;
+    		  min=a[i];
+    		  Secondmin=temp;
+    	  }
+      }
+      System.out.println(Secondmin);
+	}
+
+}

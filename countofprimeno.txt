@@ -1,0 +1,23 @@
+package array;
+public class countofprimeno {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a[]= {1,2,3,4,5,6};
+		int count=0;
+		for( int i=0;i<a.length;i++) {
+			int m=a[i];
+			int count_div=0;
+			for( int j=1;j<m+1;j++) {
+				if(m%j==0) {
+					count_div+=1;
+				}
+			}
+			if(count_div==2) {
+				count+=1;
+			}
+		}
+				
+         System.out.println(count);
+	}
+
+}
