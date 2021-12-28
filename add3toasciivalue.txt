@@ -1,0 +1,13 @@
+package ascii;
+import java.util.Scanner;
+public class add3toascii {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+      int result=n+3;
+      System.out.println((char)(result));
+	}
+
+}

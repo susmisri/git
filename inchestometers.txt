@@ -1,0 +1,15 @@
+package conversion;
+import java.util.Scanner;
+public class inchestometers {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int inch;
+		double meter;
+		 		Scanner sc=new Scanner(System.in);
+		 inch=sc.nextInt();
+      meter=(inch)/39.37;
+      System.out.println(meter);
+	}
+
+}
