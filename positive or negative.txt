@@ -1,0 +1,25 @@
+package numbers;
+import java.util.*;
+public class positiveOrNegative {
+	public static int check(int n) {
+		if(n>0)
+			return 1;
+		else
+			return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n;
+  Scanner sc=new Scanner(System.in);
+  System.out.println("enter a number");
+  n=sc.nextInt();
+  check(n);
+  if(check(n)==1)
+	  System.out.println("number is positive");
+  else
+	  System.out.println("number is negative");
+	  
+	}
+
+}

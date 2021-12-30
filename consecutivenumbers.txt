@@ -1,0 +1,28 @@
+package numbers;
+import java.util.*;
+public class consecutiveNumbers {
+	public static boolean consecutive_number(int a[],int n){
+		boolean consecutive=false;
+		for(int i=0;i<a.length-1;i++) {
+			if(a[i]==a[i+1]) {
+				consecutive=true;
+			}
+		}
+				return consecutive;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub)
+	int n;	
+  Scanner sc=new Scanner(System.in);
+   n=sc.nextInt();
+  int a[]=new int[n];
+  System.out.println("enter the array elements");
+  for(int i=0;i<n;i++)
+	  a[i]=sc.nextInt();
+  if(consecutive_number(a,n)==true) 
+	  System.out.println("numbers are consecutive");
+  else
+	  System.out.println("numbers are not consecutive");
+	}
+	}

@@ -1,0 +1,29 @@
+package comparision;
+import java.util.*;
+public class lesserOrGreaterThan10 {
+public static boolean check(int n) {
+	if(n<10) 
+			return true;
+	else
+		return false;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n,ch;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a number");
+n=sc.nextInt();
+do {
+	check(n);
+	if(check(n)==true) 
+	System.out.println("number is lesser than 10 ");
+	System.out.println("for further check press 3");
+	ch=sc.nextInt();
+	if(n>5)
+		System.out.println("greater than 5");
+	else
+		System.out.println("lesser than 5");
+}
+while(ch==3);
+	}
+}
