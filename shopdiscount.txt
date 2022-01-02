@@ -1,0 +1,27 @@
+package practice;
+import java.util.*;
+public class Discount {
+	public static int Discount(int quantity){
+		int price;
+		price=quantity*100;
+		if(price>1000) {
+		int price1 =price-(price*10/100);
+		return price1;
+		}
+		else {
+			return price;
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int price;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the quantity");
+int quantity=sc.nextInt();
+System.out.println(Discount(quantity));
+
+}
+	}
+
+

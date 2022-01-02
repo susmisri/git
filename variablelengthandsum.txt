@@ -1,0 +1,17 @@
+package practice;
+import java.util.*;
+public class variableLengthAndSum {
+	public static int Variable_length(int ...a) {
+		int sum=0;
+		for(int i=0;i<a.length;i++){
+			sum+=a[i];
+		}
+		return sum;
+	}
+	public static void main(String[] args) {		
+	System.out.println(Variable_length(1,2,3,4,5));
+	
+}
+}
+	
+	

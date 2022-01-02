@@ -1,0 +1,29 @@
+package marks;
+import java.util.*;
+public class marks {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the gender(M or F)");
+		String gender=sc.nextLine();
+		System.out.println("enter the marks");
+		int marks=sc.nextInt();
+		if(marks>=75) {
+			if(gender.equals("M"))
+				System.out.println("Intelligent boy");
+			else
+				System.out.println("Intelligent girl");
+		}
+		else if(marks>=35) {
+			if(gender.equals("M"))
+					System.out.println("average boy");
+			else
+				System.out.println("average girl");
+		}
+		else {
+			if(gender.equals("M"))
+				System.out.println("dull boy");
+			else
+				System.out.println("dull girl");
+		}
+		}
+}
