@@ -1,0 +1,18 @@
+package practice;
+import java.util.*;
+public class StudentClassification {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner(System.in);
+System.out.println("enter the gender(M or F)");
+String gender=sc.nextLine();
+System.out.println("enter the marks");
+int marks=sc.nextInt();
+String result=(gender.equals("M"))?(marks>=75)?"intelligent boy":(marks>=35)?"average boy":"dull":(marks>=75)?"intelligent girl":(marks>=35)?"average girl":"dull";
+
+	System.out.println(result);
+	
+	}
+
+}

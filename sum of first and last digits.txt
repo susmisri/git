@@ -1,0 +1,20 @@
+package practice;
+import java.util.Scanner;
+public class SumOfFirstAndLast {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int last=n%10;
+n=n/10;
+int first=0;
+while(n!=0)
+{
+	first=n%10;
+	n=n/10;
+	}
+int sum=first+last;
+System.out.println(sum);
+}
+}
