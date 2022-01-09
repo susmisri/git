@@ -1,0 +1,23 @@
+package practice;
+import java.util.*;
+public class swapping_Numbers_In_Array {
+public static int[] swap(int[] a,int index1,int index2){
+ 
+	 int temp=a[index1];
+	 a[index1]=a[index2];
+	 a[index2]=temp;
+	 return a;
+ }
+ 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    int a[]= {1,2,3,4,5,6,7};
+   swap(a,3,6);
+   for(int b:a) {
+	   System.out.println(b);
+   }
+    
+	}
+
+}

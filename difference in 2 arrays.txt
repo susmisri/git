@@ -1,0 +1,28 @@
+package differenceofarrays;
+import java.util.Scanner;
+public class differenceofarrays {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		int m=sc.nextInt();
+		int n=sc.nextInt();
+	
+		if(m==n) {
+		int x[]=new int[m];
+		int y[]=new int[n];
+		
+		for(int i=0;i<m;i++) {
+          x[i]=sc.nextInt();
+		}
+		for(int i=0;i<n;i++) {
+         y[i]=sc.nextInt();
+		}
+       for(int i=0;i<n;i++) {
+        System.out.print(x[i]-y[i]+"");
+		}
+		}
+		else {
+			System.out.println("not possible");
+		}
+	}
+}

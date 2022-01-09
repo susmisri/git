@@ -1,0 +1,33 @@
+package array;
+import java.util.Scanner;
+public class lastindexarray {
+public static int lastindex(int[] a,int n) {
+	int pos=-1;
+    for (int i= a.length-1; i<a.length; i++) {
+        if(a[i]==n){
+            pos=i; 
+            break;
+        }
+    }
+    pos=pos+1;
+    return pos;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+        int a[]=new int[10];
+        
+        for(int j=0;j<a.length;j++) {
+            a[j]= sc.nextInt();
+            }
+        System.out.println("enter the number");
+        int num = sc.nextInt();
+        System.out.println(lastindex(a,num));
+        
+	}
+}
+
+
+	
+
+

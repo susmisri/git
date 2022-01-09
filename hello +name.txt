@@ -1,0 +1,17 @@
+package practice;
+import java.util.*;
+public class helloAndNmae {
+public static String Concat(String s) {
+String	str="hello," +" "+s;
+return str;
+	
+}
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);	// TODO Auto-generated method stub
+     System.out.println("enter the name of the person");
+     String name=sc.nextLine();
+		System.out.println(Concat(name));
+     
+	}
+
+}

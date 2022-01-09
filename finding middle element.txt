@@ -1,0 +1,23 @@
+package practice;
+import java.util.*;
+public class middleElement {
+public static int middleElement(int[] a) {
+	int n=a.length;
+	int mid=(n/2)+1;
+	int middleElement=0;
+	for(int i=0;i<mid;i++) {
+		middleElement=a[i];
+	}
+	return middleElement;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] a=new int[10];
+    Scanner sc= new Scanner(System.in);
+    System.out.println("enter the elements");
+    for(int i=0;i<10;i++) {
+    	a[i]=sc.nextInt();
+    }
+    System.out.println(middleElement(a));
+	}
+}

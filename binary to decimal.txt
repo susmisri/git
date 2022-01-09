@@ -1,0 +1,21 @@
+package practice;
+import java.util.*;
+public class BinaryToDecimal {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a binary number");
+int n=sc.nextInt();
+int base=1,lastdigit;
+int decimalvalue=0;
+while(n>0) {
+	lastdigit=n%10;
+	n=n/10;
+	decimalvalue+=lastdigit*base;
+	base=base*2;
+	
+}
+System.out.println(decimalvalue);
+	}
+
+}
