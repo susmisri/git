@@ -1,0 +1,17 @@
+package indexk;
+import java.util.*;
+public class indexK {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the number");
+int n=sc.nextInt();
+System.out.println("enter the index");
+int index=sc.nextInt();
+int a=1<<index|n;
+
+System.out.println(a);
+	}
+
+}
