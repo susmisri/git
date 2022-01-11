@@ -1,0 +1,14 @@
+package practice;
+import java.util.*;
+public class JoiningTwoStrings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+String str1=sc.nextLine();
+String str2=sc.nextLine();
+String str=str1.concat(str2);
+System.out.println(str);
+	}
+
+}

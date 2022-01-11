@@ -1,0 +1,19 @@
+package practice;
+import java.util.*;
+public class String_Equality {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+String str1=sc.nextLine();
+String str2=sc.nextLine();
+if(str1.equals(str2)) {
+//if(str1.equalsIgnoreCase(str2)) {
+	System.out.println("equal");
+}
+else {
+	System.out.println("not equal");
+}
+	}
+
+}
