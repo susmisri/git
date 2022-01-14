@@ -1,0 +1,34 @@
+public class DifferenceOf2DMatrices {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the rows length");
+		int r=sc.nextInt();
+		System.out.println("enter the coulumns length");
+		int c=sc.nextInt();
+		int[][] A=new int[r][c];
+		int[][] B=new int[r][c];
+		System.out.println("enter the values");
+		int i,j;
+		for( i=0;i<r;i++) {
+			for( j=0;j<c;j++) {
+				A[i][j]=sc.nextInt();
+			}
+		}
+		for( i=0;i<r;i++) {
+			for( j=0;j<c;j++) {
+				B[i][j]=sc.nextInt();
+			}
+		}
+		int[][] difference=new int[r][c];
+		for( i=0;i<r;i++) {
+			for( j=0;j<c;j++) {
+				difference[i][j]=A[i][j]-B[i][j];
+		     System.out.print(difference[i][j]+" ");
+			}
+		System.out.println();
+		}
+
+	}
+
+}

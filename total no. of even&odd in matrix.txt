@@ -1,0 +1,45 @@
+package practice;
+import java.util.*;
+public class TotalNumberOfEvenOddInMatrix {
+public static int  even(int[][]a) {
+	int ecount=0;
+	for(int i=0;i<a.length;i++) {
+		for(int j=0;j<a[0].length;j++) {
+			if(a[i][j]%2==0) {
+				ecount++;
+			
+			}
+		}
+	}
+	return ecount;
+}
+public static int  odd(int[][]a) {
+	int ocount=0;
+	for(int i=0;i<a.length;i++) {
+		for(int j=0;j<a[0].length;j++) {
+			if(a[i][j]%2==0) {
+				ocount++;
+			}
+		}
+	}
+	return ocount;
+}
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the rows length");
+int r=sc.nextInt();
+System.out.println("enter the columns length");
+int c=sc.nextInt();
+int[][] a=new int[r][c];
+for(int i=0;i<r;i++) {
+	for(int j=0;j<c;j++) {
+		a[i][j]=sc.nextInt();
+	}
+}
+int e=even(a);
+int o=odd(a);
+System.out.println("total even numbers:"+e);
+System.out.println("total odd numbers:"+o);
+}
+	}
