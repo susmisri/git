@@ -1,0 +1,19 @@
+abstract class Book{
+    String title;
+    abstract void setTitle(String s);
+    String getTitle(){
+        return title;
+    }
+}
+class mybook extends Book{
+    public void setTitle(String s){
+        this.title=s;
+    }
+}
+public class some{
+    public static void main(String[] args ){
+        mybook b=new mybook();
+        b.setTitle("A tale of 2 cities");
+        System.out.println(b.getTitle());
+    }
+}
