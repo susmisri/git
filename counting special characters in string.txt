@@ -1,0 +1,28 @@
+package practice;
+import java.util.*;
+public class CountTheSpecialCharacters {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+String str=sc.nextLine();
+int l=str.length();
+char[] ch=str.toCharArray();
+int alphabets=0,digits=0,specialcharacters=0;
+
+for(int i=0;i<l;i++) {
+	if((ch[i]>=65&&ch[i]<=90)||(ch[i]>=97&&ch[i]<=122)) {
+		alphabets++;
+	}
+	else if(ch[i]>=48&&ch[i]<=57) {
+		digits++;
+	}
+	else {
+		specialcharacters++;
+	}
+} 
+    System.out.println(specialcharacters);
+
+	}	
+}	
+

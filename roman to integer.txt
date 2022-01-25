@@ -1,0 +1,31 @@
+package practice;
+import java.util.*;
+public class RomanToInteger {
+public static int romanToInteger(String S) {
+	Map<Character, Integer> map=new HashMap<>();
+	map.put('I', 1);
+	map.put('V', 5);
+	map.put('X', 10);
+	map.put('L', 50);
+	map.put('C', 100);
+	map.put('D', 500);
+	map.put('M', 1000);
+ int len=S.length(),sum=0;
+for(int i=0;i<len;i++) {
+	if(i>0&&map.get(S.charAt(i))>map.get(S.charAt(i-1))){
+		sum+=map.get(S.charAt(i))-2*map.get(S.charAt(i-1));
+	}
+	else {
+		sum+=map.get(S.charAt(i));
+	}
+}
+   return sum;
+}
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+			String S=sc.nextLine();
+			int result=romanToInteger(S);
+			System.out.println(result);
+}
+}
+

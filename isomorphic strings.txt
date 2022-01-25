@@ -1,0 +1,42 @@
+package practice;
+import java.util.*;
+public class IsomorphicStrings {
+public static boolean isIsomorphic(String s1,String s2) {
+	int m=s1.length();
+	int n=s2.length();
+	if(m!=n)
+		return false;
+	boolean is_visited[]=new boolean[256];
+	for(int i=0;i<256;i++) {
+		is_visited[i]=false;
+	}
+	int map[]=new int[256];
+	for(int i=0;i<256;i++) {
+		map[i]=-1;
+	}
+	for(int i=0;i<n;i++) {
+		if(map[s1.charAt(i)]==-1) {
+			if(is_visited[s2.charAt(i)]==true) 
+				return false;
+			is_visited[s2.charAt(i)]=true;
+			map[s1.charAt(i)]=s2.charAt(i);
+		}
+		else if(map[s1.charAt(i)]!=s2.charAt(i))
+			return false;
+	}
+	return true;
+}
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+String s1=sc.nextLine();
+String s2=sc.nextLine();
+if(isIsomorphic(s1,s2)==true) {
+	System.out.println("Isomorphic strings");
+}
+else {
+	System.out.println(" They are not Isomorphic strings");
+}
+	}
+
+}
