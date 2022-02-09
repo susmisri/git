@@ -1,5 +1,5 @@
 public class MyClass {
-    public static int localMinUtil(int[] arr, int low,
+    public static int localMinima(int[] arr, int low,
                                    int high, int n)
     {
          
@@ -13,9 +13,9 @@ public class MyClass {
          
         
         else if(mid > 0 && arr[mid - 1] < arr[mid])
-                return localMinUtil(arr, low, mid - 1, n);
+                return localMinima(arr, low, mid - 1, n);
         
-        return localMinUtil(arr, mid+1, high, n);
+        return localMinima(arr, mid+1, high, n);
     }
     
      
@@ -25,7 +25,7 @@ public class MyClass {
          
         int arr[] = {22,8,5,2,3};
         int n = arr.length;
-        System.out.println("Index of a local minima is " + localMinUtil(arr,0,4, n));
+        System.out.println("Index of a local minima is " + localMinima(arr,0,4, n));
     
     }
     }
