@@ -1,0 +1,23 @@
+public class MyClass {
+ public  static int findMin(int array[], int size) 
+{
+    int left = 0;
+    int right = size - 1;
+    while(left < right) 
+    {
+        if(array[left] < array[right]) // case 1
+           return array[left];
+        //int mid = left + (right-left)/2;  
+        int mid=(left+right)/2;
+        if(array[mid] > array[right])
+           left = mid + 1 ;          // case 2
+        else
+           right = mid;             // case 3
+    }
+return array[left];
+}
+    public static void main(String args[]) {
+      int[] a={3,4,5,1,2};
+      System.out.print(findMin(a,5));
+    }
+}

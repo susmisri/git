@@ -1,0 +1,36 @@
+public class MyClass {
+    private static int search(int[] a,int n){  //binary search
+       int start=0;
+       int end=a.length-1;
+       while(start<=end){
+         int mid=(start+end)/2;
+         if(n==a[mid]){
+             return mid;
+         }
+       else  if(a[start]<=a[mid]){//left array
+             if(n>=a[start]&&n<a[mid]){
+                 end=mid-1;
+             }
+             else{
+                 start=mid+1;
+             }
+         }
+         else{ //right array
+             if(n>a[mid]&&n<=a[end]) {
+                 start=mid+1;
+             }
+             else{
+                 end=mid-1;
+             }
+         }
+         
+       }
+     return -1; 
+    }  
+    public static void main(String args[]) {
+      int[] a={3,4,5,1,2};
+       int n=1;
+      System.out.print("element is found at index:");
+      System.out.print(search(a,n));
+    }
+}
